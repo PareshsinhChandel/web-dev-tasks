@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom right, rgba(47, 47, 54, 0.628), rgb(4, 2, 62));
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header h1 {
+    font-weight: bolder;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.header p {
+    font-size: 22px;
+    font-weight: 900;
+    padding: 20px;
+    text-align: center;
+    animation: slideInRight 2s ease-in-out;
+}
+
+.header hr {
+    border: none;
+    border-top: 2px dashed #000000;
+    width: 100%;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.team-data {
+    text-align: center;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.team-data h2 {
+    margin: 20px 0;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.team-data h3 {
+    color: white;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.team-member{
+    align-items: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.team-members{
+    align-items: center;
+    display: inline;
+    margin: 20px; 
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.team-members img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* border: 50%; */
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: gray;
+    object-fit: cover;
+    box-sizing: border-box;
+    animation: bounceIn 2s ease-in-out;
+}
+.team-members p{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: violet;
+}
+
+.team-members p strong{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+.team-member-core{
+  display: flex;
+  cursor: pointer;
+}
+
+.team-member1 {
+    align-items: center;
+    display: inline;
+    margin: 20px; 
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+.team-member:hover{
+    cursor: pointer;
+}
+
+
+ .team-member1 img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: gray;
+    justify-content: center;
+    object-fit: cover;
+ }
+
+ .team-member1 p{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: violet;
+}
+
+.team-member1 p strong{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+}
+
+.develoment-team{
+    align-items: center;
+}
+
+.develoment-team h3 {
+    color: white;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.team-member:hover{
+    cursor: pointer;
+}
+
+.developers-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+.developers-team:hover{
+    cursor: pointer;
+}  
+  
+  .developers-team-member {
+    width: 150px;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  .developers-team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: gray;
+  }
+
+  .developers-team-member p {
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: violet;
+}
+  
+  .developers-team-member p strong {
+    display: block;
+    color: #000000;
+    font-size: 20px; 
+  }
+
+  .sales-team{
+    align-items: center;
+  }
+
+  .sales-team h3{
+    color: white;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeInUp 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
